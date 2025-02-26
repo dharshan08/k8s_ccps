@@ -1,0 +1,15 @@
+k8s:
+  rke2:
+    version: v1.31.1+rke2r1
+    config:
+      token: purdue-k8s-rke2
+      port: 9345
+      params_file:
+        master: "roles/rke2/templates/master-config.yaml"
+        worker: "roles/rke2/templates/worker-config.yaml"
+
+  kubectl:
+    version: v1.31.3
+
+  helm:
+    version: v3.16.4
